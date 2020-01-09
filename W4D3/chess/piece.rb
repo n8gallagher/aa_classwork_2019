@@ -1,4 +1,5 @@
 class Piece
+  attr_reader :color, :position
   def initialize(color, board, position)
     @color = color
     @board = board
@@ -10,10 +11,17 @@ class Piece
   end
 
   def empty?
-    #later
+    # checking self is NullPiece
+    self.symbol == nil
   end
 
-  def valid_moves; end 
+  def valid_moves
+    if self.class == Pawn
+      self.move_dirs
+    else
+      self.moves
+    end
+  end 
 
   def pos=(val)
     @position = val

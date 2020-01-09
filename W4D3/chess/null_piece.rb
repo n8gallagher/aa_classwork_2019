@@ -1,4 +1,5 @@
 require_relative 'piece.rb'
+require 'singleton'
 
 class NullPiece < Piece 
 
@@ -6,10 +7,12 @@ class NullPiece < Piece
   attr_reader :color, :symbol
 
   def initialize
-    super
+    super(nil, nil, nil)
     @color = nil 
     @symbol = nil
   end
 
-
+  def moves
+    nil
+  end
 end
