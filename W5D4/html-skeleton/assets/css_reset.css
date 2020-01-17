@@ -1,0 +1,20 @@
+ html, body {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-family: American Typewriter, serif;
+  background-color: gray;
+
+}
+
+ul li, ol li, h2, h1, figcaption, p, label  {
+  font-family: inherit;
+}
+
+section {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: gray;
+}
+
+/* body {
+  background-color: red; } */
