@@ -1,0 +1,2 @@
+class UpdatedArtwork < ApplicationRecord
+end
