@@ -1,0 +1,13 @@
+<h1>Here are all of our Cats!!!!!</h1>
+<a href="<%= new_cat_url %>">Add Cat!</a>
+<ul>
+    <% @cats.each do |cat| %>
+        <li>
+            <img src="https://www.c-ville.com/wp-content/uploads/2019/09/Cats-660x335.jpg" alt="cat beg">
+            <a href="<%= cat_url(cat) %>">Rent <%= cat.name %>!</a> 
+            
+        </li>
+        <br>
+    <% end %>
+    
+</ul>
