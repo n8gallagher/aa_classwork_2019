@@ -20,6 +20,15 @@
       <input type="hidden" name="_method" value="DELETE">
       <input type="submit" value="Sign Out 📼">
    </form>
+    <% else %>
+     <h2>Already a user?</h2><br>
+      <form action="<%= new_session_url %>" method="GET"> 
+        <input type="submit" value="Sign In 📼">
+      </form>
+     <h2>New Users</h2><br>
+     <form action="<%= create_session_url %>" method="POST"> 
+        <input type="submit" value="Sign Up 📼">
+      </form>
    <% end %>
   </div>
   
