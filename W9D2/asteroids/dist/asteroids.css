@@ -1,0 +1,12 @@
+#game-canvas {
+  /* width: 700px;
+  height: 600px; */
+  border: 1px solid red;
+
+}
+
+.canvas-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
