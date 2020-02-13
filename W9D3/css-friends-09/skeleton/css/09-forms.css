@@ -1,0 +1,38 @@
+/* PHASE 9: Forms */
+
+.post {
+  position: absolute;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  width: 80%;
+}
+.post .thumb {
+
+}
+
+.input {
+  background-color: lightgray;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+#title {
+  align-items: flex-start;
+  float: left;
+  background-color: white;
+  margin: 10px;
+}
+
+#post-body {
+  align-items: flex-start;
+  float: left;
+  background-color: white;
+  margin: 10px;
+}
+
+.submit {
+  align-items: flex-end;
+  float: right;
+}
